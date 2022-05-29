@@ -50,7 +50,7 @@ console.log(bricks);
 const drawBall = function () {
   ctx.beginPath();
   ctx.arc(ball.x, ball.y, ball.size, 0, Math.PI * 2);
-  ctx.fillStyle = "#0095dd";
+  ctx.fillStyle = "#304D6D";
   ctx.fill();
   ctx.closePath();
 };
@@ -58,7 +58,7 @@ const drawBall = function () {
 const drawPaddle = function () {
   ctx.beginPath();
   ctx.rect(paddle.x, paddle.y, paddle.w, paddle.h);
-  ctx.fillStyle = "#0095dd";
+  ctx.fillStyle = "#304D6D";
   ctx.fill();
   ctx.closePath();
 };
@@ -73,7 +73,7 @@ const drawBricks = function () {
     column.forEach((brick) => {
       ctx.beginPath();
       ctx.rect(brick.x, brick.y, brick.w, brick.h);
-      ctx.fillStyle = brick.visible ? "#0095dd" : "transparent";
+      ctx.fillStyle = brick.visible ? "#304D6D" : "transparent";
       ctx.fill();
       ctx.closePath();
     })
